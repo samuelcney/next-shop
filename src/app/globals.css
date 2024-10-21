@@ -19,6 +19,13 @@
   src: url('./fonts/GeistVF.woff');
 }
 
+*, html{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
 body {
   color: var(--background);
   background: var(--foreground);
