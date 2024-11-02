@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronUp, LogOut, User2 } from "lucide-react";
+import { ChevronDown, ChevronUp, User2 } from "lucide-react";
 import { useEffect, useState } from "react";
 import { decode } from "jsonwebtoken";
 import axios from "axios";

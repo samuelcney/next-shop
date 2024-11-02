@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Button from "@/components/Button/Button";
 import Input from "@/components/Input/Input";
 import axios from "axios";
-import { AtSignIcon, Eye, EyeClosed, Lock } from "lucide-react";
+import { AtSignIcon, Eye, EyeClosed } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast, ToastContainer, Bounce, TypeOptions } from "react-toastify";
@@ -15,7 +16,7 @@ export default function Login(){
 
     const router = useRouter()
 
-    const notify = (message: string, type:TypeOptions) => toast(message)
+    const notify = (message: string, type:TypeOptions) => toast(message, {type})
 
     const onSubmit = async(e : React.FormEvent<HTMLFormElement>)=>{
       e.preventDefault()
