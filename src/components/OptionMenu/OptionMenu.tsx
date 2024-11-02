@@ -17,7 +17,7 @@ export default function OptionsMenu(){
     const style = "flex p-2 hover:bg-[#ccc] bg-white hover:cursor-pointer"
 
     return(
-        <div className="flex flex-col absolute border top-[70px] w-[140px]">
+        <div className="flex flex-col absolute border top-[70px] w-[140px] z-10">
                 <span className={style} onClick={navigateToProfile}>
                     <User2 size={20}/>
                     <h1 className="ml-2 font-medium">Minha conta</h1>
